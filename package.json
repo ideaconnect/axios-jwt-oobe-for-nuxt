@@ -1,6 +1,6 @@
 {
   "name": "@idct/axios-jwt-oobe-for-nuxt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nuxt module wrapper around the `@idct/axios-jwt-oobe` package",
   "licenses": [
     {
@@ -13,17 +13,15 @@
     "Pooya Parsa <pooya@pi0.ir>"
   ],
   "main": "lib/module.js",
-  "types": "types/index.d.ts",
   "files": [
-    "lib",
-    "types/*.d.ts"
+    "lib"
   ],
   "scripts": {
     "lint": "eslint lib test",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "release": "git push --follow-tags && npm publish --access public"
   },
   "dependencies": {
-    "@idct/axios-jwt-oobe": "^0.1.4",
+    "@idct/axios-jwt-oobe": "^0.1.5",
     "@nuxtjs/proxy": "^2.0.1",
     "axios": "^0.20.0",
     "axios-retry": "^3.1.8",
